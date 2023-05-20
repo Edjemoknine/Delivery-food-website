@@ -1,0 +1,45 @@
+// #check{
+//     appearance: none;
+//     display: none;
+// }
+
+// ============= BTN change theme ================
+body.dark-theme{
+    $first-color-light:hsl($hue,$sat,75%);
+    $title-color:hsl($hue,4%,95%);
+    $text-color:hsl($hue,4%,80%);
+    $body-color:hsl($hue,8%,13%);
+    $container-color:hsl($hue,8%,18%);
+}
+.btn-theme{
+    display: inline-block;
+    width: 40Px;
+    height: 20px;
+    border: 2px solid $text-color;
+    border-radius: 20px;
+    position: relative;
+    background-color: $first-color-alt;
+    
+    &::before{
+     content: '';
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 2px;
+     width: 15px;
+     height: 15Px;
+     border-radius: 50%;
+     background-color: black;
+     transition: .4s;
+    }
+}
+.change-theme{
+    background-color: transparent;
+    &::before{
+        background-color: $first-color;
+        left: 20px;
+    }
+}
+
+// =================== Themes =========================
+

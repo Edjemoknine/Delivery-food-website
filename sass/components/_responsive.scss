@@ -1,0 +1,153 @@
+@media (max-width:360px) {
+    img{
+        width: 100%;
+    }
+    .section{
+        padding: 3rem 0 1rem;
+    }
+    .app__buttons{
+        grid-template-columns:max-content;
+    }
+    .button-flex{
+       
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+// ============= meduim devices===========
+
+@media (min-width:580px) {
+    .section__title-center{
+        text-align: initial;
+    }
+    .home__container,
+    .about__container,
+    .security__container,
+    .services__container,
+    .app__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .home__container,
+    .about__container,
+    .app__container,
+    .security__container{
+        align-items: center;
+    }
+
+
+    .home__img{
+        order: 1;
+    }
+     
+     .home__data,
+    .about__data,
+     .security__data,
+     .app__data,
+     .contact__description
+        {
+        text-align: initial;
+    }
+
+    .about__img,.app__img{
+        order: -1;
+    }
+}
+
+// =================================
+
+@media (min-width:767px) {
+   
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+    .nav{
+        &__list{
+           
+            flex-direction: row;
+            column-gap: 1.5rem;
+            align-items: center;
+        }
+    }
+    .nav__toogle{
+        display: none;
+    }
+    .home__container{
+        padding: 7rem 0 3rem;
+    }
+    .app__buttons{
+        justify-content: initial;
+    }
+
+       $biggest-font-size:6rem;
+       $h2-font-size:1.55rem;
+       $h3-font-size:1.25rem;
+       $normal-font-size:1rem;
+       $small-font-size:.875rem;
+       $smaller-font-size:.813rem;
+}
+
+// ================= large devices==============
+@media (min-width:991px) {
+
+// =============Responsive Font-size ===================================
+    .home__title{
+        font-size: 3.5rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .section__title-center{
+        font-size: 2rem;
+    }
+    .section__title{
+        font-size: 2rem;
+    }
+
+    // =====================================================================
+
+
+    .button__header{
+        display: block;
+    }
+    .section__img{
+        width: 470px;
+    }
+   
+    .about__container,
+    .app__container,
+    .security__container{
+      column-gap: 6rem;
+    }
+    .contact__container{
+        grid-template-columns:3fr 1.75fr 1.25fr;
+        column-gap: 3rem;
+    }
+    .services__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer__container{
+        grid-template-columns: repeat(5,1fr);
+
+    }
+    .footer__social{
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .home__img{
+        width: 540px;
+    }
+}
+
+@media (max-width:1200px) {
+    .container{
+        margin: 0 30Px;
+    }
+}

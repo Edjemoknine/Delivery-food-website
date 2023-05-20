@@ -1,0 +1,42 @@
+.footer{
+    background-color: $first-color-lighten;
+    padding: 2rem 0;
+
+    &__container{
+        row-gap: 2rem;
+    }
+    &__logo,&__title{
+        font-size: $h3-font-size;
+        margin-bottom: .75rem;
+    }
+    &__logo{
+        display: inline-block;
+        font-weight: $font-semi-bold;
+        color: $title-color;
+    }
+    &__description,&__link{
+        font-size: $small-font-size;
+    }
+    &__links{
+        display: grid;
+        row-gap: .5rem;
+    }
+    &__link{
+    color: $title-color;
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &-link{
+            font-size: 1.25rem;
+            color: $title-color;
+        }
+    }
+    &__copyright{
+        text-align: center;
+        margin-top: 6rem;
+        font-size: $small-font-size;
+        color: $text-color;
+    }
+}

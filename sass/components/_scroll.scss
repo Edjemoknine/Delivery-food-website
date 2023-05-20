@@ -1,0 +1,35 @@
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -10%;
+    background-color: $first-color;
+    padding: 0.3rem;
+    display: inline-flex;
+    border-radius: 4px;
+    z-index: $z-tooltip;
+    transition: .4S;
+    opacity: .6;
+
+    &:hover{
+        opacity: 1;
+        background-color: $first-color-alt;
+    }
+
+}
+.show-scroll-btn{
+    bottom: 3rem;
+}
+
+//========scroll bar ===========================
+
+::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 20px;
+   
+
+    &-thumb{
+        background-color: $first-color-alt;
+        border-radius: 20px;
+    }
+   
+}

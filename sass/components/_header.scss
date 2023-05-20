@@ -1,0 +1,81 @@
+// @use '../config/variables' as*;
+//  header============
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $body-color;
+    z-index: $z-index;
+    transition: .4s ease;
+    padding: 0.5rem 0;
+}
+
+// nav===============
+
+.nav{
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+      
+    &__menu{
+        @media (max-width:767px) {
+            position: fixed;
+            width: 90%;
+            top:-100%;
+            left: 0;
+            right: 0;
+            background-color: $container-color;
+            box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.1);
+            border-radius: 2rem;
+            z-index: $z-index;  
+            padding: 2.5rem 0;
+            margin: 0 auto;
+            transition: 0.4s ease;
+
+        }
+       
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+    }
+    &__link,&__logo,&__toogle{
+        color: $title-color;
+        font-weight: $font-semi-bold;
+    }
+    &__logo{
+        font-size: 1.5rem;
+    }
+    &__toogle{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+}
+
+.show{
+    top: 4rem;
+    transition: .5s;
+}
+
+
+.active-link{
+    position: relative;
+   &::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $text-color;
+   }
+}
